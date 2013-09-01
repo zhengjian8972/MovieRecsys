@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="index" namespace="/" extends="default">
+		<action name="home" class="com.cmri.bcpdm.recsys.web.action.item.ItemListAction" method="index">
+			<result name="success">/WEB-INF/content/home.jsp</result>
+		</action>
+	
+		<action name="login" >
+			<result>/WEB-INF/content/commen/login.jsp</result>
+		</action>
+	
+		<action name="logout" class="com.cmri.bcpdm.recsys.web.action.login.LoginAction" method="logout">
+			<result name="success" type="redirectAction">home</result>
+		</action>
+	</package>
+	
+	<package name="loginAjax" namespace="/loginAjax" extends="json-default">
+		<action name="check" class="com.cmri.bcpdm.recsys.web.action.login.LoginAction"
+			method="check">
+			<result type="json">
+				<param name="root">checkInfo</param>
+			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,23 @@
+#
+#Tue May 28 11:32:50 CST 2013
+genBasicCompId=false
+sessionFactoryName=com.cmri.bcpdm.recsys.persistence.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=/WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=
+configFile=/MovieRecsys/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true
+baseDaoClass=com.cmri.bcpdm.recsys.persistence.BaseHibernateDAO

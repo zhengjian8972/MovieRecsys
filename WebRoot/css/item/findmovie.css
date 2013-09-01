@@ -1,0 +1,113 @@
+#wrapper {
+width: 950px;
+margin: 0 auto;
+}
+#content {
+min-height: 420px;
+}
+.clearfix {
+display: block;
+}
+.article {
+float: left;
+width: 590px;
+padding-right: 40px;
+}
+table {
+border-collapse: collapse;
+border: 0;
+padding: 0;
+margin: 0;
+}
+tr {
+display: table-row;
+vertical-align: inherit;
+border-color: inherit;
+}
+tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}
+body, td, th {
+font: 12px Helvetica,Arial,sans-serif;
+line-height: 1.62;
+}
+td[Attributes Style] {
+width: 100px;
+vertical-align: top;
+}
+user agent stylesheettd, th {
+display: table-cell;
+}
+element.style {
+}
+Matched CSS Rules
+a:visited {
+color: #669;
+text-decoration: none;
+}
+a img {
+border-width: 0;
+vertical-align: middle;
+}
+p.first {
+margin-top: 0;
+}
+.ul {
+border-bottom: 1px dashed #DDD;
+line-height: 100%;
+clear: both;
+}
+user agent stylesheetp {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+.pl2 {
+font: 14px Arial,Helvetica,sans-serif;
+line-height: 150%;
+color: #666;
+}
+
+table {
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+a:link {
+color: #37A;
+text-decoration: none;
+}
+.others-interest-info a:visited {
+color: #37A;
+text-decoration: none;
+}
+.nonemovie {
+font: 20px/150% Arial, Helvetica, sans-serif;
+color: #666;
+}
+.nounderline{
+text-decoration: none;
+font-size: 14px;
+}
+#subject-others-interests {
+margin-bottom: 40px;
+word-wrap: break-word;
+}
+.others-interest-avatar {
+float: left;
+margin-right: 12px;
+}
+.others-interest-info {
+overflow: hidden;
+}
+#subject-others-interests li {
+overflow: hidden;
+padding: 12px 0;
+border-bottom: 1px dashed #DDD;
+line-height: 1.5;
+color: #666;
+

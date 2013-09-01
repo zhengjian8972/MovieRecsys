@@ -1,0 +1,51 @@
+#result
+{
+width:580px;
+margin:auto;
+}
+tr.items
+{
+height:100px;
+margin:2px 5px 2px 5px;
+}
+td.image
+{
+width:100px;
+height:90px;
+}
+.user_img
+{
+width:80px;
+height:80px;
+}
+.user_info
+{
+width:200px;
+margin:0 20px 0 20px;
+}
+a.user_name
+{
+	text-decoration:none;
+color:#575656;
+}
+.user_name:hover
+{
+color:#072;
+}
+.add_att
+{
+width:160px;
+	  padding-left:25px;
+}
+button.attbnt
+{
+	text-align:center;
+padding:3px;
+}
+.image, .user_info, .add_att
+{
+	text-align:center;
+	padding-left:30px;
+}
+
+
