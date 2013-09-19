@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>电影推荐系统</title>
+<title>注册</title>
 <style type="text/css">
 /* Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
@@ -191,7 +191,7 @@ body {
 <body>
 	<div class="article">
 		<div class="item">
-			<label>帐号</label> <input id="register_user_id" name="userId"
+			<label>账户ID</label> <input id="register_user_id" name="userId"
 				type="text" class="basic-input" maxlength="60" tabindex="1" />
 		</div>
 		<div class="item">
@@ -199,11 +199,11 @@ body {
 				type="text" class="basic-input" maxlength="60" tabindex="1" />
 		</div>
 		<div class="item">
-			<label>输入密码</label> <input id="register_pwd" name="pwd1"
+			<label>密码</label> <input id="register_pwd" name="pwd1"
 				type="password" class="basic-input" maxlength="20" tabindex="2" />
 		</div>
 		<div class="item">
-			<label>确认密码</label> <input id="register_pwd2" name="pwd2"
+			<label>确认密码</label> <input id="register_pwd2" name="pwd2"
 				type="password" class="basic-input" maxlength="20" tabindex="2" />
 		</div>
 		<div class="item">

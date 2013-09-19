@@ -1,7 +1,7 @@
 package com.cmri.bcpdm.recsys.persistence;
 
 import java.util.List;
-import java.util.Set;
+
 import org.hibernate.LockMode;
 import org.hibernate.Query;
 import org.hibernate.Transaction;

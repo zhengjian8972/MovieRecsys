@@ -1,11 +1,5 @@
 package com.cmri.bcpdm.recsys.service.user;
 
-import java.security.MessageDigest;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-
 import com.cmri.bcpdm.recsys.model.impl.User;
 import com.cmri.bcpdm.recsys.persistence.UserDAO;
 import com.cmri.bcpdm.recsys.util.MD5Tool;
@@ -42,7 +36,7 @@ public class UserService {
 		user = new User();
 		user.setUserId(id);
 		user.setUserName(name);
-		user.setPwd(pwd);
+		user.setPwd(MD5Tool.mainMD5(pwd).toLowerCase());
 		ud.save(user);
 		return com.opensymphony.xwork2.Action.SUCCESS;
 	}

@@ -150,14 +150,14 @@ public class MovieDAO extends BaseHibernateDAO {
 	}
 
 	public List findPopMovie() {
-		String queryString = "select mr.movie_Id,m.movie_Title,mr.avg_Rate,m.year,m.countries,m.director_name,m.cast_name,mr.rate_cnt from Movie_Rate mr,Movie m where m.movie_id=mr.movie_id and mr.avg_Rate >= 3.5 order by m.year desc, mr.avg_rate desc limit 0,12";
+		String queryString = "select mr.movie_Id,m.movie_Title,mr.avg_Rate,m.year,m.countries,m.director_name,m.cast_name,mr.rate_cnt from Movie_Rate mr,Movie m where m.movie_id=mr.movie_id and mr.avg_Rate >= 3.5 and mr.rate_cnt>30 order by m.year desc, mr.avg_rate desc limit 0,12";
 		Query queryObject = getSession().createSQLQuery(queryString);
 		List list = queryObject.list();
 		return list;
 	}
 
 	public List findTopMovie() {
-		String queryString = "select mr.movie_Id,m.movie_Title,mr.avg_Rate,m.year,m.countries,m.director_name,m.cast_name,mr.rate_cnt from Movie_Rate mr,Movie m where m.movie_id=mr.movie_id  order by mr.avg_rate desc limit 0,12";
+		String queryString = "select mr.movie_Id,m.movie_Title,mr.avg_Rate,m.year,m.countries,m.director_name,m.cast_name,mr.rate_cnt from Movie_Rate mr,Movie m where m.movie_id=mr.movie_id and mr.rate_cnt>30 order by mr.avg_rate desc limit 0,12";
 		Query queryObject = getSession().createSQLQuery(queryString);
 		return queryObject.list();
 	}

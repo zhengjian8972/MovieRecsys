@@ -1,11 +1,5 @@
 package com.cmri.bcpdm.recsys.web.action.register;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-
-import net.sf.json.JSONArray;
-
 import com.cmri.bcpdm.recsys.service.user.UserService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;

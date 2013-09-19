@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%@taglib prefix="s" uri="/struts-tags"%>
-<html>movie_poster
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 		<title>搜索电影：<s:property value="searchText" /></title>
